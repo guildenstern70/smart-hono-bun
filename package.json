@@ -1,0 +1,12 @@
+{
+  "name": "smart-hono-bun",
+  "scripts": {
+    "dev": "bun run --hot src/index.tsx"
+  },
+  "dependencies": {
+    "hono": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
