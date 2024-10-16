@@ -7,22 +7,12 @@
  */
 
 import { Hono } from 'hono'
-import Home from './pages/home'
-import AnotherPage from "./pages/anotherpage";
+import home from "./pages/home";
+import anotherpage from "./pages/anotherpage";
 
 const app = new Hono()
 
-const home =
+app.route('/', home)
+app.route('/learnmore', anotherpage)
 
-app.get('/', (c) => {
-  return c.html(
-      <Home />
-  )
-});
-app.get('/learnmore', (c) => {
-  return c.html(
-      <AnotherPage />
-  )
-});
-
-export default app;
+export default app

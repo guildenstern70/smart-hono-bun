@@ -8,6 +8,7 @@
 
 import type { FC } from 'hono/jsx'
 import { Layout } from "./layout";
+import { Hono } from "hono";
 
 const AnotherPage: FC = () => {
     return (
@@ -19,4 +20,13 @@ const AnotherPage: FC = () => {
     )
 }
 
-export default AnotherPage;
+const anotherPage = new Hono()
+
+anotherPage.get('/', (c) => {
+    return c.html(
+        <AnotherPage />
+    )
+});
+
+export default anotherPage;
+

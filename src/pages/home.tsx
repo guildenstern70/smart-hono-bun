@@ -8,6 +8,7 @@
 
 import type { FC } from 'hono/jsx'
 import { Layout } from "./layout";
+import { Hono } from "hono";
 
 const Home: FC = () => {
     return (
@@ -18,5 +19,14 @@ const Home: FC = () => {
     )
 }
 
-export default Home;
+const home = new Hono()
+
+home.get('/', (c) => {
+    return c.html(
+        <Home />
+    )
+});
+
+
+export default home;
 
