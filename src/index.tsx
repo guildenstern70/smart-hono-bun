@@ -6,13 +6,13 @@
  *
  */
 
-import { Hono } from 'hono'
+import { Hono } from 'hono';
 import home from "./pages/home";
 import anotherpage from "./pages/anotherpage";
 
-const app = new Hono()
+const app = new Hono();
 
-app.route('/', home)
-app.route('/learnmore', anotherpage)
+app.route('/', home);
+app.route('/learnmore', anotherpage);
 
-export default app
+export default app;
