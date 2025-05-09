@@ -33,7 +33,9 @@ export const Layout: FC = (props) => {
         <body>
             <Header />
             <main>
-                {props.children}
+                <div className="container">
+                    {props.children}
+                </div>
             </main>
         </body>
         </html>

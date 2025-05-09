@@ -11,6 +11,6 @@ import { FC } from "hono/jsx";
 
 export const NavBar: FC = () => {
     return (
-        <nav className="nav navbar">
+        <nav>
         </nav>);
 }

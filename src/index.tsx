@@ -7,14 +7,16 @@
  */
 
 import { Hono } from 'hono';
-import home from "./pages/home";
-import anotherpage from "./pages/anotherpage";
 import { serveStatic } from "@hono/node-server/serve-static"
+import learnMorePage from "./pages/learn-more";
+import firstGamePage from "./pages/first-game";
+import homePage from "./pages/home";
 
 const app = new Hono();
 
-app.route('/', home);
-app.route('/learnmore', anotherpage);
+app.route('/', homePage);
+app.route('/learnmore', learnMorePage);
+app.route('/firstgame', firstGamePage);
 
 app.use('/static/*', serveStatic({ root: './' }))
 
