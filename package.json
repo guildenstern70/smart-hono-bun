@@ -6,7 +6,8 @@
     "lint-fix": "bunx eslint --fix"
   },
   "dependencies": {
-    "hono": "^4.6.4"
+    "hono": "^4.7.9",
+    "@hono/node-server": "^1.14.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",

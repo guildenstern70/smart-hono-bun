@@ -1,7 +1,7 @@
 /*
  * Smart Hono Bun
- * A web template project for Deno
- * Copyright (c) 2024 Alessio Saltarin
+ * A web template for modern websites
+ * Copyright (c) 2024-25 Alessio Saltarin
  * ISC License
  *
  */
